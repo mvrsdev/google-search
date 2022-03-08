@@ -1,0 +1,175 @@
+* {
+  font-family: Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+body {
+  /* Design System Variables */
+  --primary-color: #1a73e8;
+  --primary-color-text: white;
+  --default-color: #f8f9fa;
+  --default-color-dark: #f2f2f2;
+  --default-color-text: #202124;
+  --border-default-color: #dadce0;
+
+  /* Default styles */
+  color: var(--default-color-text);
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* #region Button */
+button, input[type="submit"] {
+  transition: all 190ms;
+  min-height: 36px;
+  min-width: 54px;
+  border-radius: 4px;
+  background-color: var(--default-color);
+  border: 1px solid var(--default-color);
+  font-size: 14px;
+  padding: 0 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover, input[type="submit"] {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  border: 1px solid var(--border-default-color);
+}
+
+button:active, input[type="submit"]:active {
+  filter: brightness(85%);
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
+  border: 1px solid var(--primary-color);
+}
+
+button.primary:hover {
+  filter: brightness(105%);
+  box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+
+button.icon {
+  min-height: 0;
+  min-width: 0;
+  padding: 0;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin: 0 .250rem;
+  background: transparent;
+  border: none;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+button.icon.small {
+  height: 40px;
+  width: 40px;
+  margin: 0 .150rem;
+}
+
+button.icon.small .material-icons {
+  font-size: 20px;
+}
+
+button.icon.large {
+  height: 56px;
+  width: 56px;
+  margin: 0 .150rem;
+}
+
+button.icon.large .material-icons {
+  font-size: 32px;
+}
+
+button.icon:hover {
+  background: var(--default-color);
+  filter: brightness(95%);
+}
+
+button.icon:active {
+  filter: brightness(85%);
+}
+/* #endregion */
+
+/* #region Logo */
+.logo.large {
+  width: 272px;
+}
+
+.logo.medium {
+  width: 192px;
+}
+
+.logo.small {
+  width: 92px;
+}
+/* #endregion */
+
+/* #region Searchbox */
+.search-box {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  border: 1px solid var(--border-default-color);
+  border-radius: 2rem;
+  padding: 0 .5rem;
+}
+
+.search-box>*:first-child {
+  padding-left: .5rem;
+}
+
+.search-box:hover, .search-box:focus-within {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-box input {
+  padding: 0 .5rem 0 .725rem;
+  margin-right: 8px;
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  border-right: 1px solid var(--border-default-color);
+}
+
+.search-box .prefix, .search-box .suffix {
+  color: #60666c;
+}
+/* #endregion */
+
+/* #region Header */
+header {
+  display: flex;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+  background: var(--default-color-dark);
+  padding: 0 20px;
+  color: #717579;
+  border-top: 0.5px solid var(--border-default-color);
+}
+
+footer a {
+  display: inline-block;
+  padding: 15px;
+  font-size: 14px;
+}
+/* #endregion */
