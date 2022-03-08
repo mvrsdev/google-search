@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/design-system2.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Google (by Thiago)</title>
+  </head>
+  <body>
+    <header>
+      <a href="">Gmail</a>
+      <a href="">Imagens</a>
+      <button class="icon"><span class="material-icons">apps</span></button>
+      <button class="primary" id="login-button">Fazer Login</button>
+    </header>
+
+    <main>
+      <img
+        src="../assets/images/Google_2015_logo.svg"
+        alt="Search Logo"
+        class="logo large"
+      />
+      <form id="search-form">
+        <div class="search-box">
+          <span class="material-icons prefix">search</span>
+          <input type="search" name="search" required />
+          <button class="icon small">
+            <span class="material-icons suffix">keyboard_alt</span>
+          </button>
+          <button class="icon small">
+            <span class="material-icons">mic</span>
+          </button>
+        </div>
+        <input type="submit" value="Pesquisa Google" id="google-search" />
+        <input type="button" value="Estou com sorte" id="lucky-search" />
+      </form>
+    </main>
+
+    <footer>
+      <div id="about-items">
+        <a href="">Sobre</a>
+        <a href="">Publicidade</a>
+        <a href="">Negócios</a>
+        <a href="">Como funciona a pesquisa</a>
+      </div>
+      <div id="privacy-items">
+        <a href="">Privacidade</a>
+        <a href="">Termos</a>
+        <a href="">Configurações</a>
+      </div>
+    </footer>
+
+    <script>
+      // Getting instances references
+      document
+        .getElementById("search-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          location.replace("results.html");
+        });
+    </script>
+  </body>
+</html>
