@@ -2,6 +2,15 @@
     font-family: Roboto, -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+.logo-large {
+    width: 272px;
+    height: auto;
+}
+
+.logo-small {
+    width: 92px;
+}
+
 header a {
     padding: 15px;
     color: #000000DE;
@@ -44,10 +53,50 @@ a:hover {
     text-decoration: underline;
 }
 
-form input {
-    width: 50vw;
-    height: 34px;
+.input-box {
     border: 0.8px solid #e0e0e0;
     border-radius: 3em;
-    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+form input {
+    border: none;
+    height: 34px;
+    outline: none;
+}
+
+span {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 0.5px solid #e0e0e0;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 14px;
+    min-width: 50px;
+}
+
+footer a {
+    padding: 15px;
+    color: #70757a;
 }
