@@ -2,6 +2,21 @@
     font-family: Roboto, -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
 .logo-large {
     width: 272px;
     height: auto;
@@ -14,6 +29,7 @@
 header a {
     padding: 15px;
     color: #000000DE;
+    cursor: pointer;
 }
 
 .filter-color {
@@ -61,6 +77,13 @@ a:hover {
     padding: 4px 8px;
 }
 
+.input-box:hover {
+    border: 0.1 solid #e0e0e0;
+    box-shadow: 0px 0px 25px -16px #000;
+    transition: all 350ms;
+}
+
+
 form input {
     border: none;
     height: 34px;
@@ -84,16 +107,19 @@ span {
     color: rgba(0, 0, 0, 0.54);
 }
 
+material-icons.md-18 {
+    font-size: 18px;
+}
+
 footer {
     background-color: #f2f2f2;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     border-top: 0.5px solid #e0e0e0;
     padding: 0 20px;
     align-items: center;
     font-size: 14px;
     min-width: 50px;
+    height: 48px;
 }
 
 footer a {
