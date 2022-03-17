@@ -13,8 +13,6 @@ body {
 
 header {
     display: flex;
-    align-items: center;
-    padding: 6px;
 }
 
 .logo-large {
